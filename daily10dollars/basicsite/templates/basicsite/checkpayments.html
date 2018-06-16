@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Payments|Daily1$$Dollars</title>
+	<meta charset="utf-8">
+  <link rel="icon" href="demo.png" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class='container'>		
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:orange;">
+        <span class="icon-bar" style="color:blue;"><b>-</b></span>
+        <span class="icon-bar" style="color:blue"><b>-</b></span>
+        <span class="icon-bar" style="color:blue;"><b>-</b></span> 
+      </button>
+      <a class="navbar-brand" href="#">Daily1$$Dollars</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+		<li><a href="{% url  'basic_site:payments' %}">Check your payments</a></li>
+		<li><a href="{% url  'basic_site:register' %}">Register</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact us</a></li>
+    <form action="{% url 'basic_site:logoutv' %}" method="post">
+      {% csrf_token %}
+		   <li><button type='submit' class="btn btn-success">Logout</button></li> 
+      
+    </form>
+      </ul>
+     
+    </div>
+  </div>
+</div>
+</nav>
+
+<div class="container-fluid">
+	<label>ID:{{12341234}}</label><p style="text-align: right;">1$</p>
+	<div class="progress" style="height: 20px;">
+	<div class="progress-bar bg-success"  style="width: 2%"></div>
+	</div>
+
+</div>
+<div class="container-fluid">
+	<p>	Once you reached 100 Dollars You can transfer money to your account</p>	
+</div>
+<div>
+	<h1>It will takes a week create a work space for your account</h1>
+	<h3>Share link and ask your friend to join and make more money</h3>
+</div>
+<div>
+	
+</div>
+</body>
+</html>
