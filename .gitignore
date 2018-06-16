@@ -6,6 +6,7 @@ Include/
 pip-selfcheck.json
 tcl/
 Scripts/
+db.sqlite3
 # C extensions
 *.so
 
